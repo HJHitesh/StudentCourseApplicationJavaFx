@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sas.studentApplication.Controller.RegisterController">
+    <children>
+        <AnchorPane prefHeight="63.0" prefWidth="819.0" style="-fx-background-color: #E96151;">
+            <children>
+                <Label layoutX="55.0" layoutY="-1.0" prefHeight="64.0" prefWidth="304.0" text="Application Registration" textFill="WHITE">
+                    <font>
+                        <Font name="Bangla MN Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="200.0" layoutY="95.0" prefHeight="19.0" prefWidth="106.0" text="Full Name">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font></Label>
+        <TextField fx:id="fullNameTextFeild" alignment="TOP_LEFT" layoutX="198.0" layoutY="121.0" prefHeight="30.0" prefWidth="342.0" />
+        <Label layoutX="200.0" layoutY="163.0" prefHeight="30.0" prefWidth="85.0" text="User Name">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="userNameTextFeild" alignment="TOP_LEFT" layoutX="199.0" layoutY="191.0" prefHeight="30.0" prefWidth="342.0" />
+        <Label layoutX="198.0" layoutY="230.0" prefHeight="30.0" prefWidth="91.0" text="Password">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="passwordTexField" alignment="TOP_LEFT" layoutX="198.0" layoutY="260.0" prefHeight="30.0" prefWidth="340.0" />
+        <Label layoutX="200.0" layoutY="306.0" prefHeight="30.0" prefWidth="91.0" text="Email Id">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="198.0" layoutY="387.0" prefHeight="30.0" prefWidth="137.0" text="Program Enrolled">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="467.0" prefHeight="30.0" prefWidth="91.0" text="Phone No">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phoneNoTextField" alignment="TOP_LEFT" layoutX="200.0" layoutY="491.0" prefHeight="30.0" prefWidth="340.0" />
+        <Button fx:id="onRegistrationSubmit" layoutX="199.0" layoutY="566.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #E96151;" text="Submit" textFill="WHITE">
+            <font>
+                <Font name="Bangla MN Bold" size="13.0" />
+            </font>
+        </Button>
+        <TextField fx:id="emailIdTextFeild" alignment="TOP_LEFT" layoutX="200.0" layoutY="330.0" prefHeight="30.0" prefWidth="340.0" />
+        <ChoiceBox fx:id="myProgramChoice" layoutX="199.0" layoutY="420.0" prefHeight="27.0" prefWidth="342.0" />
+    </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</AnchorPane>

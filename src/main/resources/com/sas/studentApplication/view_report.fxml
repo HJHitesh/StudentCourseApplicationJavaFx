@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sas.studentApplication.Controller.ViewReportController">
+    <children>
+        <AnchorPane prefHeight="63.0" prefWidth="811.0" style="-fx-background-color: #E96151;">
+            <children>
+                <Label layoutX="55.0" layoutY="-1.0" prefHeight="64.0" prefWidth="304.0" text="View Report" textFill="WHITE">
+                    <font>
+                        <Font name="Bangla MN Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <TableView fx:id="reportTableView" layoutX="9.0" layoutY="93.0" prefHeight="513.0" prefWidth="793.0">
+        <columns>
+          <TableColumn fx:id="appIdColumn" prefWidth="110.0" text="AppId" />
+          <TableColumn fx:id="fullNameColumn" minWidth="2.5383453369140625" prefWidth="133.0" text="FullName" />
+            <TableColumn fx:id="phoneNoColumn" minWidth="2.5383453369140625" prefWidth="126.0" text="PhoneNo" />
+            <TableColumn fx:id="emailColumn" minWidth="2.5383453369140625" prefWidth="129.59970092773438" text="Email" />
+            <TableColumn fx:id="programColumn" minWidth="2.5383453369140625" prefWidth="135.40036010742188" text="Program" />
+            <TableColumn fx:id="statusColumn" minWidth="2.5383453369140625" prefWidth="150.40106201171875" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="onEditButton" layoutX="717.0" layoutY="66.0" mnemonicParsing="false" onAction="#onEditClick" prefHeight="26.0" prefWidth="74.0" text="Edit" />
+    </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</AnchorPane>

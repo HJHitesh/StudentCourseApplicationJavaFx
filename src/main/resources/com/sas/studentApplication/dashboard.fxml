@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sas.studentApplication.Controller.DashboardController">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="286.0" text="Application Portal" textFill="#c92424">
+               <font>
+                  <Font name="Brush Script MT Italic" size="41.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="60.0" prefWidth="12.0" style="-fx-background-color: light black;" />
+            <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="447.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox layoutY="4.0" prefHeight="96.0" prefWidth="350.0">
+                     <children>
+                        <Label fx:id="userloginLabel" alignment="CENTER" contentDisplay="RIGHT" prefHeight="55.0" prefWidth="150.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Baskerville Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="adminImageView" fitHeight="60.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../../../../../icon-person.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="620.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="white-background" stylesheets="@../../../../css/Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="356.0" prefWidth="278.0">
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="84.0" prefWidth="223.0" text="Actions" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Bangla MN Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="73.0" prefWidth="296.0" stylesheets="@../../../../css/Style.css">
+                     <children>
+                        <ImageView fx:id="registerImageView1" fitHeight="50.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/register.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="registerLabel" onMouseClicked="#handleRegisterClick" prefHeight="47.0" prefWidth="166.0" stylesheets="@../../../../css/Style.css" text="Register" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="79.0" prefWidth="296.0" stylesheets="@../../../../css/Style.css">
+                     <children>
+                        <ImageView fx:id="viewReportImageView1" fitHeight="50.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/analysis.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label onMouseClicked="#handleViewReportClick" prefHeight="159.0" prefWidth="214.0" stylesheets="@../../../../css/Style.css" text="View Report" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox fx:id="addUserHbox" prefHeight="51.0" prefWidth="290.0" stylesheets="@../../../../css/Style.css">
+                     <children>
+                        <ImageView fx:id="editImageView1" fitHeight="50.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/status.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="addUserLabel" onMouseClicked="#onClickAddUser" prefHeight="62.0" prefWidth="210.0" stylesheets="@../../../../css/Style.css" text="Add User" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <Separator prefHeight="51.0" prefWidth="296.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="statusDiv" prefHeight="330.0" prefWidth="290.0">
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="84.0" prefWidth="223.0" text="Reports" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Bangla MN Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="73.0" prefWidth="296.0">
+                     <children>
+                        <ImageView fx:id="registerImageView" fitHeight="50.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/register.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="193.0" stylesheets="@../../../../css/Style.css" text="Pending" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="79.0" prefWidth="296.0">
+                     <children>
+                        <ImageView fx:id="viewReportImageView" fitHeight="50.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/analysis.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="159.0" prefWidth="214.0" stylesheets="@../../../../css/Style.css" text="Approved" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="68.0" prefWidth="283.0">
+                     <children>
+                        <ImageView fx:id="editImageView" fitHeight="45.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/status.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="211.0" stylesheets="@../../../../css/Style.css" text="Rejected" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bangla MN Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="selected" />
+                              <String fx:value="mouse-moved" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Separator prefHeight="51.0" prefWidth="296.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="290.0" />
+            <HBox prefHeight="34.0" prefWidth="204.0">
+               <children>
+                  <ImageView fx:id="logoutImageView" fitHeight="30.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Images/log-out.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" onMouseClicked="#handleLogoutClick" prefHeight="10.0" prefWidth="239.0" stylesheets="@../../../../css/Style.css" text="Logout" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bangla MN Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="selected" />
+                        <String fx:value="selected" />
+                        <String fx:value="mouse-moved" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
