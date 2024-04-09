@@ -13,7 +13,7 @@ Screens
 
 ![A computer with a screen and login screen
 
-Description automatically generated](Aspose.Words.4fa9cb18-2abb-426e-afc0-aa462a5d4c35.001.png)
+Description automatically generated]((https://github.com/HJHitesh/StudentCourseApplicationJavaFx/blob/master/Aspose.Words.4fa9cb18-2abb-426e-afc0-aa462a5d4c35.001.png))
 
 ![A screenshot of a computer
 
